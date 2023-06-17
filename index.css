@@ -1,0 +1,289 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    font-weight: bold;
+}
+.container > * {
+    flex: 1 100%;
+}
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
+    text-align: center;
+}
+p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+body {
+    margin: 0;
+}
+
+
+/* ======= HEADER ======== */
+
+.header {
+    height: 600px;
+    background: hsl(180, 50%, 75%) url(./images/mountain.png) no-repeat 50% bottom;
+    background-size: 650px;
+    position: relative;
+}
+.header h1 {
+    padding-top: 100px;
+    margin-top: 0;
+    transition: font-size 0.5s ease-out;
+}
+.header h1:hover {
+    font-size: 3.15rem;
+}
+.header img.cloud-one {
+    position: absolute;
+    left: 20rem;
+    transition: transform 1s ease;
+}
+.header img.cloud-two {
+    position: absolute;
+    top: 70px;
+    right: 18rem;
+    transition: transform 1s ease;
+}
+.header img.cloud-one:hover, .header img.cloud-two:hover {
+    transform: translate(0, -15px) scale(1.25);
+}
+
+/* ======= HEADER ======== */
+
+
+/* ======= SECTION 1 ======== */
+
+.section-one {
+    background-color: hsl(180, 50%, 70%);
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section-one img {
+    margin-top: 20px;
+    width: 350px;
+    border-radius: 50%;
+    transition: width 1s ease;
+}
+.section-one img:hover {
+    width: 360px;
+}
+
+/* ======= SECTION 1 ======== */
+
+
+/* ======= SECTION 2 ======== */
+
+.skills {
+    background-color: hsl(180, 50%, 65%);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skills img {
+    width: 350px;
+    border-radius: 25%;
+    transition: transform 1s ease;
+}
+.skills img:hover {
+    transform: scale(1.05);
+}
+.skills > div {
+    margin: 30px auto;
+    width: 65%;
+}
+.skills > div h1 {
+    font-size: 2rem;
+    text-align: justify;
+}
+.skills > div p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.float-left {
+    float: left;
+    margin-right: 35px;
+}
+.float-right {
+    float: right;
+    margin-left: 35px;
+}
+
+/* ======= SECTION 2 ======== */
+
+
+/* ======= SECTION 3 ======== */
+
+.section-five {
+    background-color: hsl(180, 50%, 60%);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.btn {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: hsl(180, 73%, 43%);
+    gap: 0 10px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 1s ease;
+}
+.btn:hover {
+    transform: scale(1.05);
+    background: hsl(180, 95%, 25%);
+}
+
+/* ======= SECTION 3 ======== */
+
+
+/* ======= FOOTER ======== */
+.footer {
+    background-color: hsl(180, 50%, 55%);
+}
+.footer-links {
+    padding-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.3rem;
+}
+.bottom-paragraph {
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 30px;
+    font-weight: 100;
+}
+/* ======= FOOTER ======= */
+
+/* ======= MEDIA QUERIE ======= */
+@media (max-width: 650px) {
+    .header {
+        height: 600px;
+        background: hsl(180, 50%, 75%) url(./images/mountain.png) no-repeat 50% bottom;
+        background-size: 100%;
+        position: relative;
+    }
+    .header h1 {
+        padding-top: 100px;
+        margin-top: 0;
+        transition: font-size 0.5s ease-out;
+    }
+    .header h1:hover {
+        font-size: 3.15rem;
+    }
+    .header img.cloud-one {
+        width: 100px;
+        position: absolute;
+        left: 1rem;
+        transition: transform 1s ease;
+    }
+    .header img.cloud-two {
+        width: 100px;
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        transition: transform 1s ease;
+    }
+    .header img.cloud-one:hover, .header img.cloud-two:hover {
+        transform: translate(0, -15px) scale(1.25);
+    }
+
+    /*===================*/
+
+    .section-one {
+        background-color: hsl(180, 50%, 70%);
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-one img {
+        margin-top: 20px;
+        width: 60%;
+        border-radius: 50%;
+        transition: width 1s ease;
+    }
+    .section-one img:hover {
+        width: calc(60% + 20px);
+    }
+    /*===================*/
+    .skills {
+        background-color: hsl(180, 50%, 65%);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills img {
+        width: 75%;
+        border-radius: 25%;
+        transition: transform 1s ease;
+    }
+    .skills img:hover {
+        transform: scale(1.05);
+    }
+    .skills > div {
+        margin: 30px auto;
+        width: 65%;
+    }
+    .skills > div h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .skills > div p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .float-left {
+        float: none;
+    }
+    .float-right {
+        float: none;
+    }
+    /*===================*/
+    .footer {
+        background-color: hsl(180, 50%, 55%);
+    }
+    .footer-links {
+        padding-top: 15px;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 10px 0;
+        justify-content: space-between;
+    }
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Mulish', sans-serif;
+        font-size: 1.3rem;
+    }
+    .bottom-paragraph {
+        font-size: 1rem;
+        margin: 0;
+        padding-top: 30px;
+        font-weight: 100;
+    }
+}
+/* ======= MEDIA QUERIE ======= */
